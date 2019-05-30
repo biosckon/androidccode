@@ -1,0 +1,7 @@
+P=hello
+OBJECTS= 
+CFLAGS= -I$(HOME)/inc -g -pg -Wall -O3 -std=gnu11
+LDLIBS= -L$(HOME)/lib -lm 
+CC=gcc
+$(P): $(OBJECTS)
+
