@@ -14,8 +14,11 @@ void procJSON(mem_struct * buf) {
 
     struct json_object *jobj = json_tokener_parse(
 			buf->memory);
+	
 
-    printf("%s\n", json_object_to_json_string_ext(jobj,
+	// pretty print json
+    printf("%s\n", 
+			json_object_to_json_string_ext(jobj,
             JSON_C_TO_STRING_SPACED | 
 			JSON_C_TO_STRING_PRETTY));
 }
