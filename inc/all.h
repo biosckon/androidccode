@@ -4,6 +4,7 @@
 #include <dlfcn.h> 
 #include <errno.h>
 #include <glib.h>
+#include <json.h>
 #include <locale.h>
 #include <math.h> 
 #include <readline/history.h>
